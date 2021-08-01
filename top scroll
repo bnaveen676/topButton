@@ -1,0 +1,14 @@
+// top scroll
+class topScollBtn {
+    scrollBtn(btnData) {
+        $(window).scroll(() => {
+            console.log('g');
+            if (window.pageYOffset > 100) {
+                $(btnData.bntEle).show(500);
+            } else {
+                $(btnData.bntEle).hide(500);
+            }
+        });
+
+    }
+}
